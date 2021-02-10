@@ -29,6 +29,22 @@ class Voetbalclub{
     public Voetbalclub(String naamconstr){
         this.naam = naamconstr;
     }
+    
+    public String getNaam() {
+        return naam;
+    }
+
+    public int getAantalGewonnen() {
+        return aantalGewonnen;
+    }
+
+    public int getAantalGelijk() {
+        return aantalGelijk;
+    }
+
+    public int getAantalVerloren() {
+        return aantalVerloren;
+    }
 
     public void verwerkResultaat(char ch) {
         if (ch == 'w')

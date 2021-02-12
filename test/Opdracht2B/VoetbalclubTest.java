@@ -41,7 +41,7 @@ class VoetbalclubTest {
         System.out.println("checkWinCount");
         v1.verwerkResultaat('w');
         assertEquals(3, v1.aantalPunten());
-        assertEquals(1, v1.getAantalGespeeld());
+        assertEquals(1, v1.aantalGespeeld());
         System.out.println("checkWinCount passed");
     }
 
@@ -51,7 +51,7 @@ class VoetbalclubTest {
         System.out.println("checkTieCount");
         v1.verwerkResultaat('g');
         assertEquals(1, v1.aantalPunten());
-        assertEquals(1, v1.getAantalGespeeld());
+        assertEquals(1, v1.aantalGespeeld());
         System.out.println("checkTieCount passed");
 
     }
@@ -62,7 +62,7 @@ class VoetbalclubTest {
         System.out.println("checkLoseCount");
         v1.verwerkResultaat('v');
         assertEquals(0, v1.aantalPunten());
-        assertEquals(1, v1.getAantalGespeeld());
+        assertEquals(1, v1.aantalGespeeld());
         System.out.println("checkLoseCount passed");
 
     }
@@ -73,7 +73,7 @@ class VoetbalclubTest {
         System.out.println("checkLoseCount");
         v1.verwerkResultaat('a');
         assertEquals(0, v1.aantalPunten());
-        assertEquals(0, v1.getAantalGespeeld(), "Expected 0 in getAantalGespeeld");
+        assertEquals(0, v1.aantalGespeeld(), "Expected 0 in getAantalGespeeld");
         System.out.println("checkWrongInputCount passed");
     }
 

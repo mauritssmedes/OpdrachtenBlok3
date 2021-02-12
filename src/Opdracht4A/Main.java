@@ -1,5 +1,4 @@
 package Opdracht4A;
-
 public class Main {
     public static void main(String[] args) {
         Huis h1 = new Huis("Nijenoord 1", 1970);
